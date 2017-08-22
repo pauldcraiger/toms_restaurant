@@ -1,0 +1,130 @@
+.bg-site--gray {
+	background-color: #ececed;
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: #666;
+		background: transparent;
+	}
+}
+
+input: -webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+
+h1 {
+	font-family: 'Bungee';
+	font-size: 48px;
+	letter-spacing: 1.2px;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.whitespace {
+	height: 50px;
+	background-color: white;
+}
+
+.container {
+}
+
+img {
+	width: 100%;
+	height: 80%;
+	margin: 0;
+	padding: 0;
+}
+
+.colHeight {
+	height: 200px;
+}
+
+.border {
+	border: 2px solid #e74c3c;
+	border-radius: 5px
+}
+
+#map {
+	height: 300px;
+}
+
+label {
+	width: 75px;
+	margin-left: 30px;
+}
+
+input {
+	width: 300px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+#makeReservation {
+	margin-top: 20px;
+}
+
+.confirmBtn {
+	margin-top: 15px;
+}
+
+.hero {
+	margin:15px 0;
+}
+
+h2 {
+	margin: 50px 0 20px 0;
+}
+
+h4 {
+	margin: 20px 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table, th, td {
+	border: 1px solid #939393;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	padding-left: .5em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	width: 50%;
+}
+
+.whoseQuote {
+	margin-left: 100px;
+	margin-top: 0;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#submitBtn {
+	background-color: #1d7cf2;
+	color: white;
+}
+#submitBtn:hover {
+	background-color: #60a3f6;
+}
+
+blockquote {
+	border-left: 4px solid #939393;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20;
+}
+
+.reservation-name, .reservation-day {
+	padding-left: 5px;
+}

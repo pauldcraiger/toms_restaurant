@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tom's Restaurant</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- includes for css files and Google Fonts-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	
+</head>
+
+<body class="bg-site--gray">
+	<div class="container">
+		<h1 class="centerText">Tom's Restaurant</h1>
+		<h3 class="centerText">A Brooklyn classic serving breakfast and lunch since 1936!</h3>
+
+		<img class="hero" src="images/toms-restaurant.jpg">
+
+		<h2 class="centerText">Reservations</h2>
+
+		<div class="row">
+			<div class="col-sm-5 border colHeight">
+				<h4 class="centerText">Make a Reservation</h4>
+				<form id="makeReservation">
+					<label for="name">Name</label>
+					<input type="text" class="reservation-name" name="name" id="name" placeholder="Your name" required>
+					<br>
+					<label for="day">Day</label>
+					<input type="text" class="reservation-day" name="day" id="day" placeholder="Enter day of Week" required>
+					<br>
+					<label for="submit"></label>
+					<input type="submit" value="Confirm" class="submitBtn" name="submit" id="submitBtn">
+				</form>
+			</div>
+
+			<div class="col-sm-2"></div>
+
+			<div class="col-sm-5 border colHeight">
+				<h4 class="centerText">Existing Reservations</h4>
+
+			 	<table id="reservationsTable">
+					<thead>
+						<th class="centerText">Name</th>
+						<th class="centerText">Day</th>
+					</thead>
+					<tbody class="reservationsBody">
+							
+					</tbody>
+				</table> 
+
+			</div>
+		</div>
+
+		<h2 class="centerText">Come Dine With Us</h2>
+		<div class="row">
+			<!-- Insert google map here -->
+			<div id="map" class="col-sm-12"></div>	
+		</div>
+		
+		
+		<h2 class="centerText">Customer Reviews</h2>
+		<div class="row">
+			<div class="col-sm-5">
+				<img src="images/jerry.jpg">
+			</div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+				<blockquote>Big lettuce, big carrots, tomatoes like volleyballs.</blockquote>
+				<p class="whoseQuote">- Jerry Seinfeld, on The BIG Salad</p>
+
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+
+	</div>
+
+	<!-- include js  files -->
+
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs&callback=initMap" async defer></script>
+
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+	<script src="js/main.js"></script>
+	
+
+</body>
+</html>
